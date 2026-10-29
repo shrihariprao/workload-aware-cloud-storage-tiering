@@ -1,0 +1,1 @@
+GitHub upload troubleshooting: the notebook and CSV artifacts are preserved in the Colab/Drive project files. The Git CLI token push returned 403 and the last token test returned 401. This status file is only a note; the notebook and result CSVs have not yet been uploaded.
