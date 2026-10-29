@@ -1,0 +1,49 @@
+{
+  "project_title": "Workload-Aware Cloud Storage Tiering for Cost and Latency Optimization",
+  "seed_for_demo": 42,
+  "random_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "n_objects": 500,
+  "n_events": 30000,
+  "simulated_days": 30,
+  "decision_interval_events": 2500,
+  "window_events": 5000,
+  "tiers": {
+    "hot": {
+      "storage_per_gb_month": 0.02,
+      "read_latency_ms": 20.0,
+      "retrieval_per_gb": 0.0,
+      "request_per_1000": 0.004
+    },
+    "cool": {
+      "storage_per_gb_month": 0.01,
+      "read_latency_ms": 100.0,
+      "retrieval_per_gb": 0.01,
+      "request_per_1000": 0.01
+    },
+    "cold": {
+      "storage_per_gb_month": 0.004,
+      "read_latency_ms": 600.0,
+      "retrieval_per_gb": 0.02,
+      "request_per_1000": 0.03
+    }
+  },
+  "migration_cost_per_gb_illustrative": 0.005,
+  "transfer_cost_per_gb_illustrative": 0.0,
+  "latency_constraint_ms_illustrative": 150.0,
+  "workload_type": "synthetic",
+  "latency_type": "simulated tier-level estimate, not live-provider measurement",
+  "ablation_variants": [
+    "Full heuristic",
+    "No recency",
+    "No frequency",
+    "No hysteresis"
+  ],
+  "latency_constraint_enforced": false,
+  "pricing_note": "Illustrative placeholder values; replace with documented provider/region/date pricing before final claims."
+}
