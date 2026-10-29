@@ -14,7 +14,7 @@ The evaluation focuses on estimated cost, access latency, migration activity, se
 
 ## Repository contents
 
-- `Cloud_Storage_Tiering_Complete_Colab_Project.ipynb`: executed Colab notebook containing workload generation, policy implementations, simulation, evaluation, and export steps.
+- `Cloud_Storage_Tiering_Complete_Colab_Project_final_executed.ipynb`: executed Colab notebook containing workload generation, policy implementations, simulation, evaluation, and export steps.
 - `results/README_RESULTS.txt`: generated summary notes.
 - `results/experiment_config.json`: experiment configuration and assumptions.
 - `results/aggregate_summary.csv`: aggregated results.
